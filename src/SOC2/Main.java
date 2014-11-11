@@ -4,19 +4,19 @@
  * and open the template in the editor.
  */
 
-package javaapplication1;
+package SOC2;
 
 /**
  *
  * @author usuario_local
  */
-public class JavaApplication1 {
+public class Main {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        NewJFrame newJFrame=new NewJFrame();
+        MainWindow newJFrame=new MainWindow();
         newJFrame.setVisible(true);
     }
     
