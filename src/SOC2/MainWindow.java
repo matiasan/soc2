@@ -6,11 +6,14 @@
 
 package SOC2;
 
+
+
 /**
  *
  * @author usuario_local
  */
 public class MainWindow extends javax.swing.JFrame {
+    private String rutaCarpeta;
 
     /**
      * Creates new form NewJFrame
@@ -28,179 +31,210 @@ public class MainWindow extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel3 = new javax.swing.JPanel();
-        jLabel4 = new javax.swing.JLabel();
-        jPanel6 = new javax.swing.JPanel();
-        jLabel3 = new javax.swing.JLabel();
-        jButton3 = new javax.swing.JButton();
-        jPanel4 = new javax.swing.JPanel();
-        jPanel5 = new javax.swing.JPanel();
-        jLabel5 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
+        jPanelNorte = new javax.swing.JPanel();
+        jLabelSeleccioneModelo = new javax.swing.JLabel();
         jTabbedPane = new javax.swing.JTabbedPane();
-        jPanel1 = new javax.swing.JPanel();
-        jPanel2 = new javax.swing.JPanel();
-        jButtonCrearRed = new javax.swing.JButton();
+        jTabbedPaneErdosRenry = new javax.swing.JPanel();
         jPanelValorN = new javax.swing.JPanel();
-        jLabel7 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jLabel8 = new javax.swing.JLabel();
+        jLabelValorN = new javax.swing.JLabel();
+        jTextFieldN = new javax.swing.JTextField();
+        jLabelApunteValorN = new javax.swing.JLabel();
         jPaneValorP = new javax.swing.JPanel();
-        jLabel9 = new javax.swing.JLabel();
-        jSlider1 = new javax.swing.JSlider();
-        jTextField3 = new javax.swing.JTextField();
-        jPanel7 = new javax.swing.JPanel();
+        jLabelValorP = new javax.swing.JLabel();
+        jSliderValorP = new javax.swing.JSlider();
+        jTextFieldValorP = new javax.swing.JTextField();
+        jPanelCrearRedErdosRenry = new javax.swing.JPanel();
+        jButtonCrearRedErdosRenry = new javax.swing.JButton();
+        jTabbedPaneBarabasiAlbert = new javax.swing.JPanel();
+        jPanelValorM = new javax.swing.JPanel();
+        jLabelValorM = new javax.swing.JLabel();
+        jTextFieldValorM = new javax.swing.JTextField();
+        jPanelValorT = new javax.swing.JPanel();
+        jLabelValorT = new javax.swing.JLabel();
+        jTextFieldValorT = new javax.swing.JTextField();
+        jPanelCrearRedBarabasiAlbert = new javax.swing.JPanel();
+        jButtonCrearRedBarabasiAlbert = new javax.swing.JButton();
+        jPanelSur = new javax.swing.JPanel();
+        jPanelNombreArchivo = new javax.swing.JPanel();
+        jLabelNombreArchivo = new javax.swing.JLabel();
+        jTextFieldNombreArchivo = new javax.swing.JTextField();
+        jLabelCsv = new javax.swing.JLabel();
+        jPanelCarpeta = new javax.swing.JPanel();
+        jLabelNombreArchivoCarpeta = new javax.swing.JLabel();
+        jLabelNombreCarpeta = new javax.swing.JLabel();
+        jButtonSeleccionarCarpeta = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel3.setLayout(new javax.swing.BoxLayout(jPanel3, javax.swing.BoxLayout.LINE_AXIS));
+        jPanelNorte.setLayout(new java.awt.BorderLayout());
 
-        jLabel4.setText(" El archivo                                                                        ");
-        jPanel3.add(jLabel4);
+        jLabelSeleccioneModelo.setText("Seleccione el modelo de red que desea crear ");
+        jPanelNorte.add(jLabelSeleccioneModelo, java.awt.BorderLayout.PAGE_START);
 
-        jPanel6.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.RIGHT));
-
-        jLabel3.setText("se guardará en ...");
-        jPanel6.add(jLabel3);
-
-        jButton3.setText("Carpeta");
-        jPanel6.add(jButton3);
-
-        jPanel3.add(jPanel6);
-
-        getContentPane().add(jPanel3, java.awt.BorderLayout.PAGE_END);
-
-        jPanel4.setLayout(new java.awt.BorderLayout());
-
-        jPanel5.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
-
-        jLabel5.setText("Nombre de archivo de salida:");
-        jPanel5.add(jLabel5);
-
-        jTextField2.setText("Introduzca nombre                                                         ");
-        jTextField2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField2ActionPerformed(evt);
-            }
-        });
-        jPanel5.add(jTextField2);
-
-        jLabel1.setText(".csv");
-        jPanel5.add(jLabel1);
-
-        jPanel4.add(jPanel5, java.awt.BorderLayout.PAGE_END);
-
-        jLabel6.setText("Seleccione el modelo de red que desea crear ");
-        jPanel4.add(jLabel6, java.awt.BorderLayout.PAGE_START);
-
-        jPanel1.setLayout(new java.awt.BorderLayout());
-
-        jPanel2.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
-
-        jButtonCrearRed.setText("Crear red");
-        jPanel2.add(jButtonCrearRed);
-
-        jPanel1.add(jPanel2, java.awt.BorderLayout.PAGE_END);
+        jTabbedPaneErdosRenry.setLayout(new javax.swing.BoxLayout(jTabbedPaneErdosRenry, javax.swing.BoxLayout.PAGE_AXIS));
 
         jPanelValorN.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
 
-        jLabel7.setText("Valor de N:");
-        jPanelValorN.add(jLabel7);
+        jLabelValorN.setText("Valor de N:");
+        jPanelValorN.add(jLabelValorN);
 
-        jTextField1.setText("jTextField1");
-        jPanelValorN.add(jTextField1);
+        jTextFieldN.setText("jTextField1");
+        jPanelValorN.add(jTextFieldN);
 
-        jLabel8.setText("(solo valores positivos y enteros)");
-        jPanelValorN.add(jLabel8);
+        jLabelApunteValorN.setText("(solo valores positivos y enteros)");
+        jPanelValorN.add(jLabelApunteValorN);
 
-        jPanel1.add(jPanelValorN, java.awt.BorderLayout.PAGE_START);
+        jTabbedPaneErdosRenry.add(jPanelValorN);
 
         jPaneValorP.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
 
-        jLabel9.setText("Valor de p: ");
-        jPaneValorP.add(jLabel9);
-        jPaneValorP.add(jSlider1);
+        jLabelValorP.setText("Valor de p: ");
+        jPaneValorP.add(jLabelValorP);
+        jPaneValorP.add(jSliderValorP);
 
-        jTextField3.setText("jTextField3");
-        jPaneValorP.add(jTextField3);
+        jTextFieldValorP.setText("jTextField3");
+        jPaneValorP.add(jTextFieldValorP);
 
-        jPanel1.add(jPaneValorP, java.awt.BorderLayout.CENTER);
+        jTabbedPaneErdosRenry.add(jPaneValorP);
 
-        jTabbedPane.addTab("Erdös-Renry", jPanel1);
-        jTabbedPane.addTab("tab3", jPanel7);
+        jPanelCrearRedErdosRenry.setFocusTraversalPolicyProvider(true);
+        jPanelCrearRedErdosRenry.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
 
-        jPanel4.add(jTabbedPane, java.awt.BorderLayout.CENTER);
+        jButtonCrearRedErdosRenry.setText("Crear red");
+        jPanelCrearRedErdosRenry.add(jButtonCrearRedErdosRenry);
 
-        getContentPane().add(jPanel4, java.awt.BorderLayout.CENTER);
+        jTabbedPaneErdosRenry.add(jPanelCrearRedErdosRenry);
+
+        jTabbedPane.addTab("Erdös-Renry", jTabbedPaneErdosRenry);
+
+        jTabbedPaneBarabasiAlbert.setLayout(new javax.swing.BoxLayout(jTabbedPaneBarabasiAlbert, javax.swing.BoxLayout.PAGE_AXIS));
+
+        jPanelValorM.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
+
+        jLabelValorM.setText("Valor de m:");
+        jPanelValorM.add(jLabelValorM);
+
+        jTextFieldValorM.setText("jTextField1");
+        jPanelValorM.add(jTextFieldValorM);
+
+        jTabbedPaneBarabasiAlbert.add(jPanelValorM);
+
+        jPanelValorT.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
+
+        jLabelValorT.setText("Valor de t:");
+        jPanelValorT.add(jLabelValorT);
+
+        jTextFieldValorT.setText("jTextField1");
+        jPanelValorT.add(jTextFieldValorT);
+
+        jTabbedPaneBarabasiAlbert.add(jPanelValorT);
+
+        jPanelCrearRedBarabasiAlbert.setFocusTraversalPolicyProvider(true);
+        jPanelCrearRedBarabasiAlbert.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
+
+        jButtonCrearRedBarabasiAlbert.setText("Crear red");
+        jPanelCrearRedBarabasiAlbert.add(jButtonCrearRedBarabasiAlbert);
+
+        jTabbedPaneBarabasiAlbert.add(jPanelCrearRedBarabasiAlbert);
+
+        jTabbedPane.addTab("Barabasi-Albert", jTabbedPaneBarabasiAlbert);
+
+        jPanelNorte.add(jTabbedPane, java.awt.BorderLayout.CENTER);
+
+        getContentPane().add(jPanelNorte, java.awt.BorderLayout.CENTER);
+
+        jPanelSur.setLayout(new javax.swing.BoxLayout(jPanelSur, javax.swing.BoxLayout.PAGE_AXIS));
+
+        jPanelNombreArchivo.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
+
+        jLabelNombreArchivo.setText("Nombre de archivo de salida:");
+        jPanelNombreArchivo.add(jLabelNombreArchivo);
+
+        jTextFieldNombreArchivo.setText("Introduzca nombre                                                         ");
+        jTextFieldNombreArchivo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextFieldNombreArchivoActionPerformed(evt);
+            }
+        });
+        jPanelNombreArchivo.add(jTextFieldNombreArchivo);
+
+        jLabelCsv.setText(".csv");
+        jPanelNombreArchivo.add(jLabelCsv);
+
+        jPanelSur.add(jPanelNombreArchivo);
+
+        jPanelCarpeta.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.RIGHT));
+
+        jLabelNombreArchivoCarpeta.setText(" El archivo");
+        jPanelCarpeta.add(jLabelNombreArchivoCarpeta);
+
+        jLabelNombreCarpeta.setText("se guardará en ...");
+        jPanelCarpeta.add(jLabelNombreCarpeta);
+
+        jButtonSeleccionarCarpeta.setText("Carpeta");
+        jButtonSeleccionarCarpeta.setToolTipText("");
+        jButtonSeleccionarCarpeta.setAutoscrolls(true);
+        jButtonSeleccionarCarpeta.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonSeleccionarCarpetaActionPerformed(evt);
+            }
+        });
+        jPanelCarpeta.add(jButtonSeleccionarCarpeta);
+
+        jPanelSur.add(jPanelCarpeta);
+
+        getContentPane().add(jPanelSur, java.awt.BorderLayout.PAGE_END);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+    private void jTextFieldNombreArchivoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldNombreArchivoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField2ActionPerformed
+    }//GEN-LAST:event_jTextFieldNombreArchivoActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(MainWindow.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(MainWindow.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(MainWindow.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(MainWindow.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
+    private void jButtonSeleccionarCarpetaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSeleccionarCarpetaActionPerformed
+        //fileChooser.setVisible(true);
+        
+        //fileChooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
+        
+       // rutaCarpeta = fileChooser.getSelectedFile().getAbsolutePath();
+        //jLabelNombreArchivoCarpeta.setText(rutaCarpeta);
+    }//GEN-LAST:event_jButtonSeleccionarCarpetaActionPerformed
 
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new MainWindow().setVisible(true);
-            }
-        });
-    }
+  
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButtonCrearRed;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
+    private javax.swing.JButton jButtonCrearRedBarabasiAlbert;
+    private javax.swing.JButton jButtonCrearRedErdosRenry;
+    private javax.swing.JButton jButtonSeleccionarCarpeta;
+    private javax.swing.JLabel jLabelApunteValorN;
+    private javax.swing.JLabel jLabelCsv;
+    private javax.swing.JLabel jLabelNombreArchivo;
+    private javax.swing.JLabel jLabelNombreArchivoCarpeta;
+    private javax.swing.JLabel jLabelNombreCarpeta;
+    private javax.swing.JLabel jLabelSeleccioneModelo;
+    private javax.swing.JLabel jLabelValorM;
+    private javax.swing.JLabel jLabelValorN;
+    private javax.swing.JLabel jLabelValorP;
+    private javax.swing.JLabel jLabelValorT;
     private javax.swing.JPanel jPaneValorP;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel5;
-    private javax.swing.JPanel jPanel6;
-    private javax.swing.JPanel jPanel7;
+    private javax.swing.JPanel jPanelCarpeta;
+    private javax.swing.JPanel jPanelCrearRedBarabasiAlbert;
+    private javax.swing.JPanel jPanelCrearRedErdosRenry;
+    private javax.swing.JPanel jPanelNombreArchivo;
+    private javax.swing.JPanel jPanelNorte;
+    private javax.swing.JPanel jPanelSur;
+    private javax.swing.JPanel jPanelValorM;
     private javax.swing.JPanel jPanelValorN;
-    private javax.swing.JSlider jSlider1;
+    private javax.swing.JPanel jPanelValorT;
+    private javax.swing.JSlider jSliderValorP;
     private javax.swing.JTabbedPane jTabbedPane;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
+    private javax.swing.JPanel jTabbedPaneBarabasiAlbert;
+    private javax.swing.JPanel jTabbedPaneErdosRenry;
+    private javax.swing.JTextField jTextFieldN;
+    private javax.swing.JTextField jTextFieldNombreArchivo;
+    private javax.swing.JTextField jTextFieldValorM;
+    private javax.swing.JTextField jTextFieldValorP;
+    private javax.swing.JTextField jTextFieldValorT;
     // End of variables declaration//GEN-END:variables
 }
